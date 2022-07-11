@@ -1,0 +1,81 @@
+:root {
+    --bs-red: #ff343f;
+    --height-bar: 85px;
+    --header-scroll-color: #212428;
+    --bs-item: #26292d;
+}
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans",Helvetica,Arial,sans-serif;
+}
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.wrapper-header {
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url('https://img.freepik.com/free-vector/cartoon-galaxy-with-stars-background_52683-65530.jpg?w=2000') top / cover no-repeat;
+}
+.dot_remove {
+    list-style-type: none;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0;
+}
+.row-payment {
+    padding-top: 90px;
+}
+.line-menu {
+    position: absolute;
+    left: 13px;
+    bottom: 0;
+    width: 0;
+    border-bottom: 2px solid var(--bs-red);
+}
+.btn-red{
+    color: #fff;
+    border-radius: 20px;
+    background-color: var(--bs-red);
+    text-decoration: none;
+}
+.btn-red:hover {
+    box-shadow: 0 0 20px var(--bs-red);
+    transition: all 0.3s ease 0s;
+}
+.header-in {
+    background-color: var(--header-scroll-color);
+    transition: all .6s ease;
+    box-shadow: rgb(10 10 10 / 80%) 0px 4px 20px 0px;
+}
+.header-out {
+    background-color: transparent;
+    transition: all .6s ease;
+    box-shadow: none;
+}
+
+.sellers {
+    width: 50px;
+    position: relative;
+}
+.seller-avatar:hover {
+    box-shadow: 0 0 0 4px var(--bs-red);
+    transition: all 0.3s ease;
+}
+.seller-avatar {
+    width: 100%;
+    border-radius: 50%;
+    height: auto !important; 
+}
+.seller-check {
+    position: absolute;
+    color: var(--bs-red);
+    right: 5px;
+    transform: translateY(28px);
+}
